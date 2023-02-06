@@ -1,0 +1,114 @@
+
+
+/*----------Search bar--------------*/
+.input_main_cont1{
+    width: 100%;
+    height:300px;
+    margin-bottom:50px;
+}
+.input_main_cont img{
+width:100%;
+height: 300px;
+object-fit: cover;
+filter: brightness(0.5);
+}
+.input_main_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.input_cont {
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    box-shadow: 0px 0px 2px 0px #ebebeb;
+    padding: 0px 10px;
+    width: 50%;
+    position: absolute;
+    top:110px;
+    background-color: white;
+}
+.input_cont div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 243px;
+}
+.input_cont div:nth-child(3){
+   
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.input_cont div:nth-child(3) input[type='text']{
+    border:none;
+}
+.input_cont div:nth-child(3) input[type='text']:focus{
+    outline:none;
+}
+.input_cont div:nth-child(3){
+    margin-left:10px;
+}
+.input_cont #free-solo-2-demo{
+    position: relative;
+    left:-10px;
+}
+.input_cont div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input_cont div:nth-child(2) .border_search_cont{
+    border-right: 1px solid grey;
+    height:30px;
+    
+}
+.search_icon {
+    position: relative;
+    top: -0.5px;
+    right: -5px;
+    outline: none;
+    color: #c4c4c4;
+    font-size: 31px;
+}
+.location_icon {
+    position: relative;
+    top:-3px;
+    right:-1px;
+    outline: none;
+    color:#f69292;
+    font-size: 25px;
+    scale: 1;
+}
+/* ------------------------Media Quries-------------------
+------------------------------------------------------- */
+@media(max-width:768px){
+    .input_cont {
+        width: 80%;
+    }
+}
+@media(max-width:426px){
+    .input_cont {
+        flex-direction: column-reverse;
+    }
+    .input_cont div:nth-child(2) .border_search_cont {
+        display: none;
+    }
+    .input_cont {
+        width: 80%;
+        align-items: center;
+    }
+    .location_icon {
+        right: -8px;
+    }
+    .searchIconContainer {
+        position: relative;
+        left: 11px;
+    }
+    .search_icon {
+        font-size: 26px;
+    }
+}
